@@ -3,7 +3,8 @@ import cv2
 cam = cv2.VideoCapture(0)
 while(cam.isOpened()):
     _,img = cam.read()
-    cv2.imshow('Imagem', img)
+    outro = cv2.imread("bingo.jpg")
+    cv2.imshow('Imagem', outro)
     if cv2.waitKey(33) >= 0:
         break
 cam.release()
